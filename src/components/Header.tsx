@@ -29,6 +29,7 @@ const Header = () => {
                 {item}
               </button>
             ))}
+            <div className="w-1" />
           </div>
           
           <Button
