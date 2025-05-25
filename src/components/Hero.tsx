@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center lg:text-left">
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-blue-600 dark:text-blue-400">
               Zoe Wang
             </h1>
             <h2 className="text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-6">
