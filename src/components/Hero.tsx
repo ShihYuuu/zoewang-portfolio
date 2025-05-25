@@ -9,6 +9,12 @@ const Hero = () => {
     }
   };
 
+  const openResume = () => {
+    // You can replace this URL with your actual resume PDF URL
+    const resumeUrl = "/resume.pdf"; // Place your resume.pdf in the public folder
+    window.open(resumeUrl, '_blank');
+  };
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 pt-20">
       <div className="container mx-auto px-6">
@@ -34,10 +40,10 @@ const Hero = () => {
               </Button>
               <Button 
                 variant="outline"
-                onClick={() => scrollToSection('contact')}
+                onClick={openResume}
                 className="border-gray-300 dark:border-gray-600 px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg"
               >
-                Get In Touch
+                My Resume
               </Button>
             </div>
           </div>
@@ -51,8 +57,6 @@ const Hero = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500 rounded-full animate-pulse"></div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-purple-500 rounded-full animate-pulse delay-1000"></div>
             </div>
           </div>
         </div>
