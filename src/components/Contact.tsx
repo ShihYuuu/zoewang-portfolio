@@ -49,7 +49,7 @@ const Contact = () => {
                   <span className="text-blue-500 mr-3">📞</span>
                   <div>
                     <p className="font-medium text-gray-900 dark:text-white">Phone</p>
-                    <p className="text-gray-600 dark:text-gray-400">765-421-0274</p>
+                    <p className="text-gray-600 dark:text-gray-400">(765)413-1661</p>
                   </div>
                 </div>
                 
@@ -57,7 +57,7 @@ const Contact = () => {
                   <span className="text-blue-500 mr-3">📧</span>
                   <div>
                     <p className="font-medium text-gray-900 dark:text-white">Email</p>
-                    <p className="text-gray-600 dark:text-gray-400">yschiang86@gmail.com</p>
+                    <p className="text-gray-600 dark:text-gray-400">zoewang1379@gmail.com</p>
                   </div>
                 </div>
                 
@@ -65,7 +65,7 @@ const Contact = () => {
                   <span className="text-blue-500 mr-3">🔗</span>
                   <div>
                     <p className="font-medium text-gray-900 dark:text-white">LinkedIn</p>
-                    <p className="text-gray-600 dark:text-gray-400">LinkedIn Profile</p>
+                    <p className="text-gray-600 dark:text-gray-400">https://www.linkedin.com/in/shih-yu-wang/</p>
                   </div>
                 </div>
               </div>
