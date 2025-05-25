@@ -1,5 +1,9 @@
 
 import { Button } from "@/components/ui/button";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+
+import profileImage from '@/assets/avatar.jpg';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -10,8 +14,7 @@ const Hero = () => {
   };
 
   const openResume = () => {
-    // You can replace this URL with your actual resume PDF URL
-    const resumeUrl = "/resume.pdf"; // Place your resume.pdf in the public folder
+    const resumeUrl = "/resume.pdf";
     window.open(resumeUrl, '_blank');
   };
 
@@ -21,23 +24,28 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-blue-600 dark:text-blue-400">
-              Zoe Wang
+              Shih-Yu (Zoe) <br/> Wang
             </h1>
             <h2 className="text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 mb-6">
-              Software Engineer & Problem Solver
+              Software Engineer & Data Analyst
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl">
-              Hi, I'm Zoe, a passionate software engineer dedicated to creating innovative solutions 
-              and transforming ideas into impactful digital experiences.
+              I’m Zoe, a data-driven engineer who enjoys solving complex problems, uncovering insights from data, 
+              and building software that scales with impact.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button 
-                onClick={() => scrollToSection('projects')}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg"
-              >
-                Explore My Work
-              </Button>
+              {/* Social Media Icons */}
+              <a href="https://www.linkedin.com/in/shih-yu-wang/" target="_blank" rel="noopener noreferrer" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
+                <FaLinkedin size={28} />
+              </a>
+              <a href="https://github.com/ShihYuuu" target="_blank" rel="noopener noreferrer" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
+                <FaGithub size={28} />
+              </a>
+              <a href="mailto:zoewang1379@gmail.com" className="text-portfolio-primary hover:text-portfolio-primary/80 dark:text-white dark:hover:text-white/80 transition-colors">
+                <HiOutlineMail size={28} />
+              </a>
+              {/* Resume btn */}
               <Button 
                 variant="outline"
                 onClick={openResume}
@@ -52,7 +60,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-700 shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face" 
+                  src={profileImage}
                   alt="Zoe Wang"
                   className="w-full h-full object-cover"
                 />
