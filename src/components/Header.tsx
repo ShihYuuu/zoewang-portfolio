@@ -17,7 +17,10 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-40 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
-          <h1 className="text-xl font-bold text-gray-900 dark:text-white">Zoe Wang</h1>
+          <h1 className="flex text-xl font-bold text-gray-900 dark:text-white">
+            <img src="unicorn.png" className="w-5 h-5 object-contain mt-1 mr-2"/>
+            Zoe Wang
+          </h1>
           
           <div className="hidden md:flex space-x-8">
             {['Home', 'About', 'Experience', 'Skills', 'Projects', 'Articles', 'Contact'].map((item) => (
