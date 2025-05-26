@@ -2,27 +2,49 @@
 const Experience = () => {
   const experiences = [
     {
-      period: "Jan 2025 – Apr 2025",
-      title: "Analytics Consultant",
-      company: "Wabash Marketplace",
-      icon: "/lovable-uploads/8e726654-0dc3-47fe-acb9-20e13ad6f5da.png", // placeholder for company icon
+      period: "Jan 2025 – May 2025",
+      title: "Student Lab",
+      company: "Kearney",
+      icon: "icon/kearney.png",
       achievements: [
-        "Developed optimization models to enhance financial strategy",
-        "Conducted scenario analysis using Python",
-        "Designed interactive dashboards for key metrics visualization"
+        "Analyzed customer sales data and conducted market analysis",
+        "Proposed customized online sales and marketing strategies",
+        "Built time series models to forecast sales and advertising performance"
       ]
     },
     {
-      period: "Sep 2019 – Jun 2021",
-      title: "Auditor",
-      company: "Deloitte & Touche",
-      icon: "/lovable-uploads/8e726654-0dc3-47fe-acb9-20e13ad6f5da.png", // placeholder for company icon
+      period: "Sep 2023 – Jun 2024",
+      title: "Application Consultant",
+      company: "IBM",
+      icon: "icon/ibm.png",
       achievements: [
-        "Audited 5 public companies, improving compliance and risk evaluation",
-        "Utilized Power BI for financial reporting and analysis",
-        "Collaborated with cross-functional teams to identify process improvements"
+        "Created web applications for banks, enhancing efficiency and reducing manual review time",
+        "Implemented full-stack applications using Angular, Spring Boot, and DB2 as the database",
+        "Consulted with clients and proposed data-driven, high-return solutionss",
+        "Led the team in an Agile environment, evaluating the feasibility of client requests"
       ]
-    }
+    },
+    {
+      period: "Jul 202 – Dec 2022",
+      title: "Software Engineer (Intern)",
+      company: "Synaptics",
+      icon: "icon/synaptics.png",
+      achievements: [
+        "Developed automated testing tools witl C++ on ODM docking products to reduce testing time",
+        "Designed tools to parse log and generated debug messages for IC designers",
+        "Analyzed end points usage data and diagnosed client issue for customers"
+      ]
+    },
+    {
+      period: "Feb 2021 – Jul 2021",
+      title: "Big Data and AI Researcher (Intern)",
+      company: "Industrial Technology Research Institute",
+      icon: "icon/itri.png",
+      achievements: [
+        "Constructed an AI application with Python to optimize supply chain management and reduce manpower",
+        "Optimized factory logistics by using statistical models to analyze data to reduce production capacity waste"
+      ]
+    },
   ];
 
   return (
