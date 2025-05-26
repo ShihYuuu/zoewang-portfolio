@@ -14,7 +14,7 @@ const Hero = () => {
   };
 
   const openResume = () => {
-    const resumeUrl = "/resume.pdf";
+    const resumeUrl = "/zoewang-portfolio/resume.pdf";
     window.open(resumeUrl, '_blank');
   };
 
