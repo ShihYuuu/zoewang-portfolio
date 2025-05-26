@@ -34,7 +34,7 @@ const About = () => {
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <img src="purdue.png" alt="Purdue Logo" className="w-12 h-12 object-contain mt-1"/>
+                  <img src="icon/purdue.png" alt="Purdue Logo" className="w-12 h-12 object-contain mt-1"/>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
                       M.S. in Business Analytics and Information Management
@@ -46,7 +46,7 @@ const About = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <img src="chengchi.png" alt="ChengChi Logo" className="w-12 h-12 object-contain mt-1"/>
+                  <img src="icon/chengchi.png" alt="ChengChi Logo" className="w-12 h-12 object-contain mt-1"/>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
                       M.S. in Management Information System
@@ -58,7 +58,7 @@ const About = () => {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <img src="tsinghua.png" alt="TsingHua Logo" className="w-12 h-12 object-contain mt-1"/>
+                  <img src="icon/tsinghua.png" alt="TsingHua Logo" className="w-12 h-12 object-contain mt-1"/>
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
                       B.S. in Industrial Engineering and Engineering Management

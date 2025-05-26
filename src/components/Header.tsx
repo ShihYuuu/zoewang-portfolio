@@ -18,7 +18,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <h1 className="flex text-xl font-bold text-gray-900 dark:text-white">
-            <img src="unicorn.png" className="w-5 h-5 object-contain mt-1 mr-2"/>
+            <img src="icon/unicorn.png" className="w-5 h-5 object-contain mt-1 mr-2"/>
             Zoe Wang
           </h1>
           
