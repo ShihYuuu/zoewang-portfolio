@@ -1,11 +1,11 @@
 
 const Skills = () => {
   const programmingLanguages = [
-    "JavaScript", "TypeScript", "Python", "Java", "SQL", "HTML/CSS"
+    "C/C++", "Java", "Python", "R", "Git", "Node.js", "JavaScript", "TypeScript", "SQL/NoSQL", "HTML"
   ];
   
   const tools = [
-    "React", "Node.js", "PostgreSQL", "Power BI", "Git", "Docker", "AWS", "MongoDB"
+    "Docker", "AWS", "Azure", "Angular", "React", "Spring Boot", "MySQL", "MongoDB", "Tableau", "Minitab"
   ];
 
   return (
