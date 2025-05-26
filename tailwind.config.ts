@@ -61,7 +61,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				morandi: {
+					blue: {
+						light: '#A5B5C5',
+						DEFAULT: '#8799AD',
+						dark: '#33465C',
+					},
+					neutral: {
+						lightest: '#F8F7F4',
+						light: '#ECE8E1',
+						DEFAULT: '#D6D0C4',
+						dark: '#C4B6A6',
+					},
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

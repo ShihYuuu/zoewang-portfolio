@@ -1,4 +1,6 @@
 
+import emailjs from 'emailjs-com';
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -23,11 +25,25 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. I'll get back to you soon!",
+
+    emailjs.send(
+      'service_dfrxsf7',
+      'template_h6q3drr',
+      formData,
+      'l2184dP72Z5cGhN0J'
+    ).then(() => {
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your message. I'll get back to you soon!",
+      });
+      setFormData({ name: "", email: "", subject: "", message: ""});
+    }).catch((err) => {
+      toast({
+        title: "Error",
+        description: "Sorry, something went wrong.",
+      });
+      console.error(err);
     });
-    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   return (
@@ -65,7 +81,9 @@ const Contact = () => {
                   <span className="text-blue-500 mr-3">🔗</span>
                   <div>
                     <p className="font-medium text-gray-900 dark:text-white">LinkedIn</p>
-                    <p className="text-gray-600 dark:text-gray-400">https://www.linkedin.com/in/shih-yu-wang/</p>
+                    <a href="https://www.linkedin.com/in/shih-yu-wang/" className="text-gray-600 dark:text-gray-400 hover:text-morandi-blue dark:hover:text-morandi-neutral">
+                      Shih-Yu (Zoe) Wang
+                    </a>
                   </div>
                 </div>
               </div>
