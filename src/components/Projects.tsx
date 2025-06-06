@@ -5,26 +5,38 @@ import { Badge } from "@/components/ui/badge";
 const Projects = () => {
   const projects = [
     {
-      title: "Instacart Basket Analysis",
-      description: "Leveraged SQL to uncover shopping patterns, reorder dynamics, and cross-sell opportunities from 3M+ grocery orders.",
-      time: "2024",
-      keywords: ["SQL", "PostgreSQL", "Data Analysis"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop"
+      title: "Informs 2025: Data-Driven Strategies for Operational Growth",
+      description: "Real-Time E-Commerce Dashboard & Automated Scenario Modeling for Production Efficiency",
+      time: "2025",
+      keywords: ["Data Analysis", "LSTM"],
+      image: "project/informs_poster.png",
+      link: "https://www.youtube.com/watch?v=4lBW0S-5kTw"
+      // Aryan upload: https://www.youtube.com/watch?v=1BEwNre9-wo
     },
     {
-      title: "GenAI Caption Generator",
-      description: "Built an end-to-end GenAI pipeline generating creative, context-aware captions using BLIP embeddings and GPT-4 API.",
-      time: "2024",
-      keywords: ["GenAI", "HuggingFace", "FastAPI"],
-      image: "https://images.unsplash.com/photo-1485833077593-4278bba3f11f?w=400&h=200&fit=crop"
+      title: "Natural Language Processing with Disaster Tweets",
+      description: "Conducted LSTM and BERT to determine the authenticity of disaster-related tweets, achieving 84.1% accuracy.",
+      time: "2025",
+      keywords: ["NLP", "TensorFlow", "Deep Learning"],
+      image: "project/disaster_tweet.png",
+      link: "https://github.com/ShihYuuu/NLP-with-Disaster-Tweets.git"
     },
     {
-      title: "Spotify Song Recommender",
-      description: "Used clustering and PCA to identify and visualize distinct Spotify song archetypes from audio metadata.",
+      title: "Restaurant Search Website",
+      description: "Created a RESTful restaurant search website in a serverless architecture using Azure Functions. Implemented unit tests with GitLab.",
       time: "2024",
-      keywords: ["Data Science", "PCA", "Clustering"],
-      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=400&h=200&fit=crop"
-    }
+      keywords: ["RESTful", "Azure", "MongoDB", "CI/CD"],
+      image: "project/restaurant_search.png",
+      link: "https://github.com/ShihYuuu/Restaurant-Browser.git"
+    },
+    {
+      title: "Cybersecurity for Malware Family Classification",
+      description: "Designed an ensemble learning based on Genetic Algorithm to integrate antivirus inconsistent labels, malware classify accuracy of 83.6%.",
+      time: "2023",
+      keywords: ["Linux"],
+      image: "project/malware.png",
+      link: "https://github.com/ShihYuuu/Malware_Family_Classifier.git"
+    },
   ];
 
   return (
@@ -47,9 +59,16 @@ const Projects = () => {
                 </div>
                 
                 <CardHeader>
-                  <CardTitle className="text-xl text-gray-900 dark:text-white">
-                    {project.title}
-                  </CardTitle>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl text-gray-900 dark:text-white hover:underline"
+                  >
+                    <CardTitle>
+                      {project.title}
+                    </CardTitle>
+                  </a>
                   <p className="text-sm text-blue-600 dark:text-blue-400 font-medium">
                     {project.time}
                   </p>
