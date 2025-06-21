@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -10,8 +9,11 @@ const Projects = () => {
       time: "2025",
       keywords: ["Data Analysis", "LSTM"],
       image: "project/informs_poster.png",
-      link: "https://www.youtube.com/watch?v=4lBW0S-5kTw"
-      // Aryan upload: https://www.youtube.com/watch?v=1BEwNre9-wo
+      links: [
+        { label: "YouTube", url: "https://www.youtube.com/watch?v=1BEwNre9-wo"},
+        { label: "Informs", url: "https://www.youtube.com/watch?v=4lBW0S-5kTw" },
+        { label: "Poster", url: "project/poster.png" }
+      ]
     },
     {
       title: "Natural Language Processing with Disaster Tweets",
@@ -59,16 +61,37 @@ const Projects = () => {
                 </div>
                 
                 <CardHeader>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xl text-gray-900 dark:text-white hover:underline"
-                  >
-                    <CardTitle>
-                      {project.title}
-                    </CardTitle>
-                  </a>
+                  {project.links?.length && project.links.length > 1 ? (
+                    <div className="relative group">
+                      <CardTitle className="text-xl text-gray-900 dark:text-white group-hover:underline cursor-pointer">
+                        {project.title}
+                      </CardTitle>
+                      <div className="absolute z-10 top-full left-0 mt-2 w-max bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded shadow-md p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        {project.links.map((link, i) => (
+                          <a
+                            key={i}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block text-sm text-blue-600 dark:text-blue-400 hover:underline px-2 py-1"
+                          >
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <a
+                      href={project.link || (project.links && project.links[0].url)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xl text-gray-900 dark:text-white hover:underline"
+                    >
+                      <CardTitle>
+                        {project.title}
+                      </CardTitle>
+                    </a>
+                  )}
                   <p className="text-sm text-blue-600 dark:text-blue-400 font-medium">
                     {project.time}
                   </p>
