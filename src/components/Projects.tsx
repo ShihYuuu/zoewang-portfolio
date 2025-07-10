@@ -32,6 +32,14 @@ const Projects = () => {
       link: "https://github.com/ShihYuuu/Restaurant-Browser.git"
     },
     {
+      title: "Data Analysis for Airbnb",
+      description: "Applied data analysis then provided insights for Airbnb. Also designed a model to predict occupancy rates for hosts.",
+      time: "2024",
+      keywords: ["Matplotlib", "Gradient Boosting model"],
+      image: "project/airbnb.png",
+      link: "https://github.com/ShihYuuu/Data-Analysis-for-Airbnb.git"
+    },
+    {
       title: "Cybersecurity for Malware Family Classification",
       description: "Designed an ensemble learning based on Genetic Algorithm to integrate antivirus inconsistent labels, malware classify accuracy of 83.6%.",
       time: "2023",
