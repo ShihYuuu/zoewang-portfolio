@@ -3,7 +3,7 @@ const Experience = () => {
   const experiences = [
     {
       period: "Jan 2025 – May 2025",
-      title: "Data Scientist (Industrial Practicum)",
+      title: "Data Scientist (Industry Practicum)",
       company: "Kearney",
       icon: "icon/kearney.png",
       achievements: [
