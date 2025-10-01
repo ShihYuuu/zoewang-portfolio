@@ -13,7 +13,7 @@ const Experience = () => {
       ]
     },
     {
-      period: "Sep 2023 – Jun 2024",
+      period: "Sep 2023 – Aug 2024",
       title: "Application Consultant",
       company: "IBM",
       icon: "icon/ibm.png",
